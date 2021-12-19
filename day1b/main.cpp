@@ -37,11 +37,11 @@ class DepthWindow
 
 void DepthWindow::push_depth(Depth depth)
 {
-        first_ = second_;
-        second_ = third_;
-        third_ = depth;
-        if (count_to_ready_)
-            count_to_ready_--;
+    first_ = second_;
+    second_ = third_;
+    third_ = depth;
+    if (count_to_ready_)
+        count_to_ready_--;
 }
 
 int main(int argc, char* argv[])
